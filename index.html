@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".inkfree").click(function(){
+    $(".test").css("font-family","ink free");
+  });
+});
+
+$(document).ready(function(){
+  $(".gerogia").click(function(){
+    $(".test").css("font-family","georgia");
+  });
+});
+$(document).ready(function(){
+  $(".tahoma").click(function(){
+    $(".test").css("font-family","tahoma");
+  });
+});
+$(document).ready(function(){
+  $(".blue").click(function(){
+    $(".test").css("color","blue");
+  });
+});
+$(document).ready(function(){
+  $(".pink").click(function(){
+    $(".test").css("color","pink");
+  });
+});
+$(document).ready(function(){
+  $(".red").click(function(){
+    $(".test").css("color","red");
+  });
+});
+$(document).ready(function(){
+  $(".yellow").click(function(){
+    $(".test").css("color","yellow");
+  });
+});
+$(document).ready(function(){
+  $(".green").click(function(){
+    $(".test").css("color","green");
+  });
+});
+$(document).ready(function(){
+  $(".dark").click(function(){
+    $("body").css("background-color","black");
+    $(".test").css("color","white")
+    $("p").css("color","white")
+  });
+});
+$(document).ready(function(){
+  $(".light").click(function(){
+    $("body").css("background-color","white");
+    $(".test").css("color","black")
+    $("p").css("color","black")
+  });
+});
+</script>
+<style>
+.container{
+border:2px solid black;
+}
+.font{
+border:2px solid black;
+}
+.inkfree{
+background-color:black;
+color:white;
+font-family:ink free;
+display:inline-block;
+}
+.gerogia{
+background-color:black;
+color:white;
+font-family:gerogia;
+display:inline-block;
+}
+.tahoma{
+background-color:black;
+color:white;
+font-family:tahoma;
+display:inline-block;
+}
+.blue{
+background-color:blue;
+color:white;
+display:inline-block;
+}
+.color{
+border:2px solid black;
+}
+.pink{
+background-color:pink;
+color:white;
+display:inline-block;
+}
+.red{
+background-color:red;
+color:white;
+display:inline-block;
+}
+.yellow{
+background-color:yellow;
+color:white;
+display:inline-block;
+}
+.green{
+background-color:green;
+color:white;
+display:inline-block;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<center><p class="test">Your paragraph</p></center>
+</div><br><br>
+<div class="font">
+<p>fonts:</p>
+<button class="inkfree">inkfree</button>
+<button class="gerogia">Gerogia</button>
+<button class="tahoma">Tahoma</button>
+</div><br><br>
+<div class="color">
+<p>colors:</p>
+<button class="blue">blue</button>
+<button class="pink">pink</button>
+<button class="red">red</button>
+<button class="yellow">yellow</button>
+<button class="green">green</button>
+</div>
+<p>theme</p>
+<button class="dark">dark</button>
+<button class="light">light</button>
+</body>
+</html>
